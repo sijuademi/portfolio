@@ -1,22 +1,66 @@
 /* 340px and less */
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 430px) {
   .header-area .main-menu .navbar,
   .header-area .main-menu .navbar .navbar-brand,
-  .site-main .services-area,
-  .site-main .subscribe-area .subscribe,
-  .site-main .subscribe-area .subscribe .subscribe-title,
-  .site-main .subscribe-area .subscribe .subscribe-title {
+  .services-area,
+  .subscribe-area .subscribe,
+  .site-main .subscribe-area .subscribe .subscribe-title p,
+  h4,
+  .subscribe-area .subscribe .subscribe-title {
     padding: 2%;
     margin: 0%;
+  }
+  .header-area .navbar .navbar-brand {
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .about-area .paragraph {
+    width: 100% !important;
+  }
+  .site-banner .banner-image > img {
+    padding: 3rem 0;
+  }
+  .about-area .row {
+    flex-direction: column-reverse;
+  }
+  .project-area .button-group button button {
+    font-size: 14px;
+  }
+  .project-area .button-group button + button {
+    padding-left: 1.1rem;
+    /* font-size: 14px; */
+  }
+  .about-area .about-title {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
   .site-main .site-banner .site-title h1 {
     font-size: 42px;
   }
   .site-main .subscribe-area .subscribe form .input-textbox input {
-    width: 15rem;
+    width: 18rem;
   }
-  .site-main > .services-area .services {
+  .site-main .services-area .services {
     width: 13rem;
+  }
+  .services-area .services {
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .services-area .row {
+    justify-content: center;
+  }
+  .about-area .title-h1 {
+    font-size: 2rem;
+  }
+  .subscribe-area .subscribe-title h4 {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  .site-main .subscribe-area .subscribe {
+    padding: 10rem 1rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -41,7 +85,7 @@
     padding-left: 3%;
   }
 
-  .site-main .project-area .button-group button {
+  .project-area .button-group button {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -54,7 +98,7 @@
   }
 
   .site-main .subscribe-area .subscribe form .input-textbox input {
-    width: 20rem;
+    width: 18rem;
     margin: 5%;
   }
 }

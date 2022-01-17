@@ -8,7 +8,7 @@
 @import url(./Partials/_global.css);
 
 /* nav */
-.header-area .main-menu .navbar .navbar-brand {
+.header-area .navbar-brand {
   padding: 0 2rem 0 5rem;
   margin-right: 20rem;
 }
@@ -35,12 +35,12 @@
 /* nav */
 
 /* start banner area */
-.site-main .site-banner .site-title h3 {
+.site-banner .site-title h3 {
   padding-top: 35%;
   font-weight: 600;
   font-size: 3rem;
 }
-.site-main .site-banner .site-title h3::after {
+.site-banner .site-title h3::after {
   content: '';
   height: 2px;
   width: 18vw;
@@ -49,14 +49,14 @@
   margin-left: 5%;
   transform: translateY(-10px);
 }
-.site-main .site-banner .site-title h1 {
+.site-banner .site-title h1 {
   font-size: 5rem;
   font-weight: 500;
 }
-.site-main .site-banner .site-title h4 {
+.site-banner .site-title h4 {
   font-size: 2rem;
 }
-.site-main .site-banner .banner-image > img {
+.site-banner .banner-image > img {
   padding: 7rem 0;
   width: 90rem;
 }
@@ -64,11 +64,11 @@
 /* end banner area */
 
 /* about area */
-.site-main .about-area {
+.about-area {
   padding: 2rem 5rem;
 }
 
-.site-main .about-area .about-title h2 > span {
+.about-area .about-title h2 > span {
   display: block;
   font-family: var(--poppins);
   font-size: 45px;
@@ -157,24 +157,25 @@
 /* Brand Area */
 
 /* Services area */
-
-.site-main .services-area {
+.services-area {
   padding: 7rem 2rem;
 }
 .site-main .services-area .services-title {
-  padding: 0 15rem;
+  padding: 0 14rem;
 }
 .site-main .services-area .services-title h1 {
   font-size: 2.2rem;
 }
-.site-main .services-area .services {
-  background: rgba(248, 252, 253, 0.973);
+.services-area .services {
+  background: rgba(202, 243, 253, 0.973);
   padding: 2rem 0;
   width: 16rem;
   margin: 5rem 0.5rem;
-  transition: box-shadow 0.7s ease;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
-.site-main > .services-area .services:hover {
+.services-area .services:hover {
   box-shadow: var(--box-shadow);
 }
 
@@ -182,10 +183,10 @@
 
 /* project area */
 
-.site-main .project-area {
+.project-area {
   padding: 4rem 0;
 }
-.site-main .project-area .button-group button {
+.project-area .button-group button {
   background: transparent;
   border: none;
   font-style: normal;
@@ -195,7 +196,7 @@
   font-family: var(--poppins);
   text-transform: uppercase;
 }
-.site-main .project-area .button-group button + button {
+.project-area .button-group button + button {
   padding-left: 3rem;
 }
 .site-main .project-area .grid .my-project > .title h4 {
@@ -212,6 +213,9 @@
 /* project area */
 
 /* About Area */
+.project-area + .about-area {
+  display: none;
+}
 .site-main .about-area .about-title p {
   padding: 1rem 7rem;
 }
